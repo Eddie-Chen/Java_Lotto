@@ -1,0 +1,7 @@
+這是一個很經典的題目，從1~49，
+隨機抓取六個不同的數字
+在Java上要隨機抽取數字不難，用 java.util.Random()或是Math.random()都可以 
+我是習慣用Math.random()這個方法
+Math.random()的取值是0<=Math.random()<1，所以要取1~49必須要寫成
+Math.random()*49+1，那個範圍在0<=Math.random()*49+1<50
+接著傳出的數值是double，所以要轉成int，取六個數字的程式碼就會變成這樣
